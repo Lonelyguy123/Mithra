@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="te">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>మిథ్ర</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="signin.css" />
+    <style>
+      /* Adjusting form container size and spacing */
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 60px 20px 20px; /* Increased top padding */
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 50px auto; /* Added top margin to push the container down */
+      }
+
+      .form-container input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .form-container button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+      }
+
+      .form-container button:hover {
+        background-color: #388e3c;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f9f9f9;
+      }
+
+      h1, h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <i class="fas fa-seedling"></i> మిథ్ర
+      </a>
+
+      <nav class="navbar">
+        <a href="./index.html">హోమ్</a>
+        <a href="./index.html">ఫీచర్స్</a>
+        <a href="./index.html">కేటగిరీలు</a>
+        <a href="./index.html">ప్రొడక్ట్స్</a>
+        <a href="./index.html">జట్టు</a>
+      </nav>
+    </header>
+        
+    <!-- Sign in/up Form -->
+    <h2>సైన్ ఇన్/అప్ ఫారం</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="https://formsubmit.co/el/vadezu" method="POST">
+          <h1>ఖాతా సృష్టించండి</h1>
+          <span></span>
+          <input type="text" placeholder="పేరు" required />
+          <input type="email" placeholder="ఇమెయిల్" required />
+          <input type="password" placeholder="పాస్వర్డ్" required />
+          <input type="text" placeholder="ఆధార్ కార్డు నంబర్" required />
+          <input type="text" placeholder="ప్రాంతం" required />
+          <input type="date" placeholder="పుట్టిన తేదీ" required />
+          <input type="tel" placeholder="ఫోన్ నంబర్" pattern="[0-9]{10}" required />
+          <button>సైన్ అప్</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>సైన్ ఇన్</h1>
+          <span>లేదా మీ ఖాతాను ఉపయోగించండి</span>
+          <input type="email" placeholder="ఇమెయిల్" required />
+          <input type="password" placeholder="పాస్వర్డ్" required />
+          <a href="#">మీ పాస్వర్డ్ మర్చిపోయారా?</a>
+          <button>సైన్ ఇన్</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>తిరిగి స్వాగతం!</h1>
+            <p>మీ వ్యక్తిగత సమాచారం తో మమ్మల్ని కలిపి ఉంచండి</p>
+            <button class="ghost" id="signIn">సైన్ ఇన్</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>హలో, మిత్రుడు!</h1>
+            <p>మీ వ్యక్తిగత వివరాలను నమోదు చేసి మాతో మీ ప్రయాణాన్ని ప్రారంభించండి</p>
+            <button class="ghost" id="signUp">సైన్ అప్</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>

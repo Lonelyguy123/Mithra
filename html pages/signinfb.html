@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mithra</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="signin.css" />
+    <style>
+      /* Custom styles for centering and adding green color */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .selection-container {
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .selection-container h1 {
+        color: #2e7d32; /* Green color for the heading */
+        margin-bottom: 20px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #388e3c; /* Darker green on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <i class="fas fa-seedling"></i> Mithra
+      </a>
+
+      <nav class="navbar">
+        <a href="./index.html">home</a>
+        <a href="./index.html">features</a>
+        <a href="./index.html">categories</a>
+        <a href="./index.html">products</a>
+        <a href="./index.html">Learn</a>
+        <a href="./index.html">Team</a>
+      </nav>
+    </header>
+
+    <!-- Selection Form Section -->
+    <div class="container" id="container">
+      <div class="selection-container">
+        <h1>Are you a Farmer or a Buyer?</h1>
+        <div class="buttons">
+          <a href="farmer-signin.html" class="btn">I am a Farmer</a>
+          <a href="buyer-signin.html" class="btn">I am a Buyer</a>
+        </div>
+      </div>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>
+
